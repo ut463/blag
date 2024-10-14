@@ -1,0 +1,23 @@
+.home {
+    height: 100vh
+}
+
+.blog{
+    height: 275px;
+}
+
+.imagebg {
+    background-image: url("../images/Landing-at-Point-Rain.jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+h1 {
+    color: green;
+    justify-content: center;
+}
+
+.thebutton {
+    text-decoration:none;
+}

@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    font-size: 200%;
+    padding: 2px;
+}
+
+.dark-mode {
+    background-color: darkblue;
+    color:white;
+}

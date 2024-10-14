@@ -1,7 +1,7 @@
-const username = document.getElementById('username');
+const name = document.getElementById('name');
 const title = document.getElementById('title');
-const content = document.getElementById('content');
-const dis = $('#dis');
+const description = document.getElementById('description');
+const lego = $('#lego');
 const holderEl = document.getElementById('holder');
 
 let blogs = []
@@ -10,15 +10,15 @@ function createBlog() {
     let blogData = JSON.parse(localStorage.getItem('blogs')) || [];
 
     for(let i = 0; i < blogData.length; i++) {
-        const newPost = `
+        const newBlog = `
         <div class="border border-2 border-black">
-            <h3 class="border-bottom border-5 border-dark">${blogData[i].title}</h3>
-            <p>${blogData[i].post}</p>
-            <h5>Posted by: ${blogData[i].username}</h5>
+            <h2 class="border-bottom border-5 border-dark">${blogData[i].title}</h3>
+            <p>${blogData[i].description}</p>
+            <h4>Posted by: ${blogData[i].name}</h5>
         </div>
         `;
 
-        dis.append(newContent);
+        lego.append(newBlog);
     }
 }
 

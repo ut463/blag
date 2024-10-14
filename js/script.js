@@ -3,9 +3,9 @@ const divTags = document.querySelectorAll('div');
 const bodyTags = document.querySelectorAll('body');
 const formTag = document.querySelectorAll('form');
 const buttonTags = document.getElementById('button');
-const username = document.getElementById('username');
+const name = document.getElementById('name');
 const title = document.getElementById('title');
-const post = document.getElementById('post');
+const description = document.getElementById('description');
 
 buttonTags.addEventListener('click', function (event) {
     event.preventDefault();
@@ -19,9 +19,9 @@ if (data) {
 }
 
 let blog = {
-    username: username.value,
+    name: name.value,
     title: title.value,
-    content: content.value.trim(),
+    description: description.value.trim(),
 };
 
 
